@@ -30,31 +30,19 @@ function App() {
         />
         <ambientLight intensity={1} />
         <Center top position={[0.3, 0, 0]}>
-          <Vinyl
-            position={[1.2, 0, 0]}
-            title="about"
-            imageUrl="../public/album1.jpg"
-          />
+          <Vinyl position={[1.2, 0, 0]} title="about" imageUrl="/album1.jpg" />
           <Vinyl
             position={[0.8, 0, 0]}
             title="experience"
-            imageUrl="../public/album2.jpg"
+            imageUrl="/album2.jpg"
           />
           <Vinyl
             position={[0.4, 0, 0]}
             title="projects"
-            imageUrl="../public/album3.jpg"
+            imageUrl="/album3.jpg"
           />
-          <Vinyl
-            position={[0, 0, 0]}
-            title="contact"
-            imageUrl="../public/album4.jpg"
-          />
-          <Vinyl
-            position={[-0.4, 0, 0]}
-            title="lab"
-            imageUrl="../public/album5.jpg"
-          />
+          <Vinyl position={[0, 0, 0]} title="contact" imageUrl="/album4.jpg" />
+          <Vinyl position={[-0.4, 0, 0]} title="lab" imageUrl="/album5.jpg" />
         </Center>
         <AccumulativeShadows temporal frames={100} scale={10}>
           <RandomizedLight amount={21} ambient={20} position={[-10, -5, 10]} />
